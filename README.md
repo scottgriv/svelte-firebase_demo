@@ -114,6 +114,10 @@ Firebase gets initlized in the `src/firebase.js` file but it needs the `firebase
 10. Firebase Authentication (optional):
 If you wish to use Firebase authentication, you need to go to the Firebase Console, navigate to the Authentication section, and enable the desired sign-in methods.
 
+## Usage
+- Enter a `messageId` and `message` in the input fields and click the "Add Data" button to add data to the Firestore database.
+- Log into Firebase and navigate to the Firestore section to see the data you added.
+
 ## Notes
 For more advance Svelte applications (outside of a simple Single Page Applications - SPA), I'd suggest using [SvelteKit](https://kit.svelte.dev/). SvelteKit is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. 
 
