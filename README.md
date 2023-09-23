@@ -1,9 +1,10 @@
 # Svelte Firebase Demo
 
 <p align="center">
-    <img src="./docs/images/svelte_logo.png" alt="Svelte Logo" style="width: 15%; vertical-align: middle;" />
-    <span style="font-size: 3em; vertical-align: middle;">+</span>
-    <img src="./docs/images/firebase_logo.png" alt="Firebase Logo" style="width: 15%; vertical-align: middle;" />
+    <img src="./docs/images/svelte_logo.png" alt="Svelte" style="width: 15%; vertical-align: middle;" />
+    <img src="./docs/images/plus-dark.png#gh-dark-mode-only" alt="+" style="vertical-align: middle;"/>
+    <img src="./docs/images/plus-light.png#gh-light-mode-only" alt="+" style="vertical-align: middle;" />
+    <img src="./docs/images/firebase_logo.png" alt="Firebase" style="width: 15%; vertical-align: middle;" />
 </p>
 
 <p align="center">
@@ -41,7 +42,6 @@ The **Three** main goals of this demo are to:
     <br>
     <i>Application Preview.</i>
 </div>
-<br>
 
 -------
 
@@ -97,6 +97,8 @@ Firebase gets initlized in the `src/firebase.js` file but it needs the `firebase
 8. Create a collection called `firebase_demo` and add a document with the following fields:
     - `messageId` (number)
     - `message` (string)
+    
+    <br>
     <div align="center">
         <a href="" target="_blank">
             <img src="./docs/images/collection_document.png" style="width: 75%;"/>
