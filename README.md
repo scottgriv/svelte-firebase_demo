@@ -51,6 +51,7 @@ The **Three** main goals of this demo are to:
     - [Firestore](#firestore)
     - [Authentication](#authentication)
 - [Getting Started](#getting-started)
+- [Usage](#usage)
 - [Notes](#notes)
 - [Disclaimer](#disclaimer)
 - [Resources](#resources)
@@ -115,7 +116,7 @@ Firebase gets initlized in the `src/firebase.js` file but it needs the `firebase
 If you wish to use Firebase authentication, you need to go to the Firebase Console, navigate to the Authentication section, and enable the desired sign-in methods.
 
 ## Usage
-- Enter a `messageId` and `message` in the input fields and click the "Add Data" button to add data to the Firestore database.
+- Enter a `messageId` (any number, this is not a key in the database) and `message` (any text) in the input fields and click the "Add Data" button to add data to the Firestore database.
 - Log into Firebase and navigate to the Firestore section to see the data you added.
 
 ## Notes
