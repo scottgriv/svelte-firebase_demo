@@ -1,7 +1,7 @@
 <!-- Begin README -->
 
 <div align="center">
-    <a href="https://scottgriv.github.io/vue-binary_converter/" target="_blank">
+    <a href="https://github.com/scottgriv/svelte-firebase_demo" target="_blank">
         <img src="./docs/images/icon.png" width="200" height="200"/>
     </a>
 </div>
