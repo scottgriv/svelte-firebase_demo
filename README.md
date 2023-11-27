@@ -29,9 +29,7 @@ The **Three** main goals of this demo are to:
 - Demonstrate how to use Firebase Firestore to add data through a Svelte web application.
 
 <div align="center">
-    <a href="" target="_blank">
-        <img src="./docs/images/demo.png" style="width: 50%;"/>
-    </a>
+    <img src="./docs/images/demo.png" style="width: 50%;"/>
     <br>
     <i>Application Preview</i>
 </div>
