@@ -1,51 +1,45 @@
-# Svelte Firebase Demo
+<!-- Begin README -->
 
+<div align="center">
+    <a href="https://scottgriv.github.io/vue-binary_converter/" target="_blank">
+        <img src="./docs/images/icon.png" width="200" height="200"/>
+    </a>
+</div>
 <p align="center">
-    <img src="./docs/images/svelte_logo.png" alt="Svelte" style="width: 15%; vertical-align: middle;" />
-    <img src="./docs/images/plus-dark.png#gh-dark-mode-only" alt="+" style="vertical-align: middle;"/>
-    <img src="./docs/images/plus-light.png#gh-light-mode-only" alt="+" style="vertical-align: middle;" />
-    <img src="./docs/images/firebase_logo.png" alt="Firebase" style="width: 15%; vertical-align: middle;" />
-</p>
-
-<p align="center">
-    <a href="https://docs.microsoft.com/en-us/windows/uwp/">
-        <img src="https://img.shields.io/badge/Svelte-3.55.0-FF3E00?style=for-the-badge&logo=svelte" alt="Svelte Badge" />
-    </a>
-    <a href="https://nodejs.org/en/">
-        <img src="https://img.shields.io/badge/Node.js-16.13.2-036E02?style=for-the-badge&logo=node.js" alt="Node.js Badge" />
-    </a>
-    <a href="https://firebase.google.com/">
-        <img src="https://img.shields.io/badge/Firebase-10.4.0-FCCA3F?style=for-the-badge&logo=firebase" alt="Firebase Badge" />
-    </a>
+    <a href="https://svelte.dev/"><img src="https://img.shields.io/badge/Svelte-3.55.0-FF3E00?style=for-the-badge&logo=svelte" alt="Svelte Badge" /></a>
+    <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node.js-16.13.2-036E02?style=for-the-badge&logo=node.js" alt="Node.js Badge" /></a>
+    <a href="https://firebase.google.com/"><img src="https://img.shields.io/badge/Firebase-10.4.0-FCCA3F?style=for-the-badge&logo=firebase" alt="Firebase Badge" /></a>
     <br>
-    <a href="mailto:scott.grivner@gmail.com">
-        <img src="https://img.shields.io/badge/email-contact_me-red?style=for-the-badge&logo=gmail" alt="Email Badge" />
-    </a>
-    <a href="https://www.buymeacoffee.com/scottgriv">
-        <img src="https://img.shields.io/badge/donate-buy_me_a_coffee-yellow?style=for-the-badge&logo=buymeacoffee&color=ffdd00" alt="BuyMeACoffee Badge" />
-    </a>
+    <a href="https://github.com/scottgriv"><img src="https://img.shields.io/badge/github-follow_me-9031AC?style=for-the-badge&logo=github&color=9031AC" alt="GitHub Badge" /></a>
+    <a href="mailto:scott.grivner@gmail.com"><img src="https://img.shields.io/badge/gmail-contact_me-DC4233?style=for-the-badge&logo=gmail" alt="Email Badge" /></a>
+    <a href="https://www.buymeacoffee.com/scottgriv"><img src="https://img.shields.io/badge/buy_me_a_coffee-support_me-FEDE1F?style=for-the-badge&logo=buymeacoffee&color=FEDE1F" alt="BuyMeACoffee Badge" /></a>
+    <br>
+    <a href="https://prgoptimized.com" target="_blank"><img src="https://img.shields.io/badge/PRG-Silver Project-C0C0C0?style=for-the-badge&logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDIwMDEwOTA0Ly9FTiIKICJodHRwOi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy1TVkctMjAwMTA5MDQvRFREL3N2ZzEwLmR0ZCI+CjxzdmcgdmVyc2lvbj0iMS4wIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiB3aWR0aD0iMjYuMDAwMDAwcHQiIGhlaWdodD0iMzQuMDAwMDAwcHQiIHZpZXdCb3g9IjAgMCAyNi4wMDAwMDAgMzQuMDAwMDAwIgogcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCI+Cgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwMDAwMCwzNC4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiCmZpbGw9IiNDMEMwQzAiIHN0cm9rZT0ibm9uZSI+CjxwYXRoIGQ9Ik0xMiAzMjggYy04IC04IC0xMiAtNTEgLTEyIC0xMzUgMCAtMTA5IDIgLTEyNSAxOSAtMTQwIDQyIC0zOCA0OAotNDIgNTkgLTMxIDcgNyAxNyA2IDMxIC0xIDEzIC03IDIxIC04IDIxIC0yIDAgNiAyOCAxMSA2MyAxMyBsNjIgMyAwIDE1MCAwCjE1MCAtMTE1IDMgYy04MSAyIC0xMTkgLTEgLTEyOCAtMTB6IG0xMDIgLTc0IGMtNiAtMzMgLTUgLTM2IDE3IC0zMiAxOCAyIDIzCjggMjEgMjUgLTMgMjQgMTUgNDAgMzAgMjUgMTQgLTE0IC0xNyAtNTkgLTQ4IC02NiAtMjAgLTUgLTIzIC0xMSAtMTggLTMyIDYKLTIxIDMgLTI1IC0xMSAtMjIgLTE2IDIgLTE4IDEzIC0xOCA2NiAxIDc3IDAgNzIgMTggNzIgMTMgMCAxNSAtNyA5IC0zNnoKbTExNiAtMTY5IGMwIC0yMyAtMyAtMjUgLTQ5IC0yNSAtNDAgMCAtNTAgMyAtNTQgMjAgLTMgMTQgLTE0IDIwIC0zMiAyMCAtMTgKMCAtMjkgLTYgLTMyIC0yMCAtNyAtMjUgLTIzIC0yNiAtMjMgLTIgMCAyOSA4IDMyIDEwMiAzMiA4NyAwIDg4IDAgODggLTI1eiIvPgo8L2c+Cjwvc3ZnPgo=" alt="Silver" /></a>
 </p>
 
--------
+---------------
 
-A demo of app made using the **Svelte** `JavaScript` web framework and **Firebase Firestore** data storage service.
+<h1 align="center">🔥🔥🔥 Svelte Firebase Demo 🔥🔥🔥</h1>
+
+A demo of app made using the **Svelte** JavaScript web framework and **Firebase Firestore** data storage service.
 
 The **Three** main goals of this demo are to:
-- How to get started with Svelte (instlaling, creating a project, running a server, etc.)
+- How to get started with Svelte (installing, creating a project, running a server, etc.)
 - Demonstrate how to integrate Firebase into a Svelte application.
 - Demonstrate how to use Firebase Firestore to add data through a Svelte web application.
 
 <div align="center">
     <a href="" target="_blank">
-        <img src="./docs/images/demo.png" style="width: 75%;"/>
+        <img src="./docs/images/demo.png" style="width: 50%;"/>
     </a>
     <br>
-    <i>Application Preview.</i>
+    <i>Application Preview</i>
 </div>
 
 -------
 
 ## Table of Contents
+
 - [What is Svelte?](#what-is-svelte)
 - [What is Firebase?](#what-is-firebase)
     - [Firestore](#firestore)
@@ -59,18 +53,23 @@ The **Three** main goals of this demo are to:
 - [Credits](#credits)
 
 ## What is Svelte?
+
 Svelte is a JavaScript framework for building user interfaces. It is similar to React and Vue in that it uses a virtual DOM and component-based architecture. However, unlike React and Vue, Svelte does not use a virtual DOM at runtime. Instead, Svelte compiles your code into highly efficient vanilla JavaScript code that updates the DOM directly. This means that Svelte apps are smaller and faster than apps built with other frameworks.
 
 ## What is Firebase?
+
 Firebase is a platform that provides a variety of services for building web and mobile apps. The services used in this demo are Firestore and Authentication.
 
 ### Firestore
+
 Firestore is a NoSQL database that stores data in documents. Documents are stored in collections and can be queried using the Firebase SDK. Firestore is a good choice for this demo because it is easy to set up and use, and it is free for small projects.
 
 ### Authentication
+
 Firebase Authentication provides a variety of authentication methods, including email/password, Google, Facebook, Twitter, and GitHub. It also provides a simple way to manage user accounts and passwords. Authentication is a good choice for this demo because it is easy to set up and use, and it is free for small projects.
 
 ## Getting Started
+
 1. Install [Node.js](https://nodejs.org/en/download/).
 2. Install Svlete CLI with `npm install -g svelte-cli`.
 3. Clone this repository.
@@ -116,18 +115,22 @@ Firebase gets initlized in the `src/firebase.js` file but it needs the `firebase
 If you wish to use Firebase authentication, you need to go to the Firebase Console, navigate to the Authentication section, and enable the desired sign-in methods.
 
 ## Usage
+
 - Enter a `messageId` (any number, this is not a key in the database) and `message` (any text) in the input fields and click the "Add Data" button to add data to the Firestore database.
 - Log into Firebase and navigate to the Firestore section to see the data you added.
 
 ## Notes
+
 For more advance Svelte applications (outside of a simple Single Page Applications - SPA), I'd suggest using [SvelteKit](https://kit.svelte.dev/). SvelteKit is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing. 
 
 Another good resource for Svelte and Firebase is [SvelteFire](https://github.com/codediodeio/sveltefire). SvelteFire is a collection of official Svelte bindings for Firebase. It includes bindings for Firebase Authentication, Cloud Firestore, Realtime Database, Storage, and Cloud Messaging. It also includes a collection of utilities for working with Firebase and Svelte.
 
 ## Disclaimer
+
 This application serves as a simple example of how to integrate Firebase into a Svelte application. It is not intended to be a complete application, but rather a starting point for building your own application. Feel free to modify it as you see fit.
 
 ## Resources
+
 - [Svelte](https://svelte.dev/) - The official Svelte website.
 - [Firebase](https://firebase.google.com/) - The official Firebase website.
 - [Node.js](https://nodejs.org/en/) - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine (used by Svelte for development).
@@ -140,12 +143,24 @@ This application serves as a simple example of how to integrate Firebase into a 
 - [SvelteFire](https://github.com/codediodeio/sveltefire) - SvelteFire is a collection of official Svelte bindings for Firebase. It includes bindings for Firebase Authentication, Cloud Firestore, Realtime Database, Storage, and Cloud Messaging. It also includes a collection of utilities for working with Firebase and Svelte.
 
 ## License
-- This project is released under the terms of the **MIT License**, which permits use, modification, and distribution of the code, subject to the conditions outlined in the license.
+
+This project is released under the terms of the **MIT License**, which permits use, modification, and distribution of the code, subject to the conditions outlined in the license.
 - The [MIT License](https://choosealicense.com/licenses/mit/) provides certain freedoms while preserving rights of attribution to the original creators.
 - For more details, see the [LICENSE](LICENSE) file in this repository. in this repository.
 
-## Credit
-**Author:** Scott Grivner <br>
-**Email:** scott.grivner@gmail.com <br>
+## Credits
+
+**Author:** [Scott Grivner](https://github.com/scottgriv) <br>
+**Email:** [scott.grivner@gmail.com](mailto:scott.grivner@gmail.com) <br>
 **Website:** [scottgrivner.dev](https://www.scottgrivner.dev) <br>
-**Reference:** [Main Branch](https://github.com/scottgriv/svelte-firebase_demo)
+**Reference:** [Main Branch](https://github.com/scottgriv/svelte-firebase_demo) <br>
+
+---------------
+
+<div align="center">
+    <a href="https://github.com/scottgriv" target="_blank">
+        <img src="./docs/images/footer.png" width="100" height="100"/>
+    </a>
+</div>
+
+<!-- End README -->
