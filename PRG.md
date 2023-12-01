@@ -15,7 +15,7 @@ This file is used to connect this repository to the **PRG** project categorizati
 **Repository Tier:** Silver <br>
 **Technology:** Svelte, Firebase, Node.js <br>
 **Category:** Web Application, NoSQL Database, API <br>
-**Order:** 9 <br>
+**Order:** 10 <br>
 
 ## Parameters
 
