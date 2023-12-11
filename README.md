@@ -19,7 +19,7 @@
 
 ---------------
 
-<h1 align="center">🔥🔥🔥 Svelte Firebase Demo 🔥🔥🔥</h1>
+<h1 align="center">🔥 Svelte Firebase Demo 🔥</h1>
 
 A demo of app made using the **Svelte** JavaScript web framework and **Firebase Firestore** data storage service.
 
